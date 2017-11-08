@@ -6,7 +6,7 @@ else
     repo_name=`basename $(pwd)`
     echo "set Repo name to ${repo_name}"
 fi
-curl -u 'chengjiemvp:1d97596d37a448390250a2f1977b693b089fdf10' https://api.github.com/user/repos -d '{"name":"'$repo_name'"}'
+curl -u 'chengjiemvp:' https://api.github.com/user/repos -d '{"name":"'$repo_name'"}'
 # git remote add origin git@github.com:chengjiemvp/$repo_name.git
 }
 
