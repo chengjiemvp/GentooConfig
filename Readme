@@ -1,0 +1,8 @@
+~ :                 .xprofile   .xinitrc    .zshrc  .vimrc  .oh-my-sh   .Xdefaults
+/etc/conf.d/xdm:    xdm
+/usr/share/icons/:  DMZ-White   DMZ-Black:  在该目录下建立default目录，目录中新建index.theme文件，写入:
+    [icon theme]
+    Inherits=DMZ-(White或Black)
+    若不生效可能还需要更改鼠标主题包中的index.theme文件，检查其中是否有Inherits行，若无需添加。
+    建立链接:   ln -s /usr/share/icons/DMZ-(White或Black) /usr/share/icons/default
+/usr/share/fonts/:  apple:      awesome在主题配置文件中启用LiHeiPro字体，xterm在.Xdefaults中设置字体
